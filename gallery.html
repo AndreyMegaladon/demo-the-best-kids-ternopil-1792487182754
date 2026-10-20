@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея — the BEST KIDS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black bg-gradient-to-r from-amber-500 to-rose-500 bg-clip-text text-transparent">the BEST KIDS</a>
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="index.html" class="px-4 py-2 rounded-lg font-medium hover:bg-amber-50 text-gray-600">Головна</a>
+                <a href="about.html" class="px-4 py-2 rounded-lg font-medium hover:bg-amber-50 text-gray-600">Про нас</a>
+                <a href="services.html" class="px-4 py-2 rounded-lg font-medium hover:bg-amber-50 text-gray-600">Меню</a>
+                <a href="gallery.html" class="px-4 py-2 rounded-lg font-medium bg-amber-500 text-white">Галерея</a>
+                <a href="booking.html" class="px-4 py-2 rounded-lg font-medium hover:bg-amber-50 text-gray-600">Бронювання</a>
+                <a href="contacts.html" class="px-4 py-2 rounded-lg font-medium hover:bg-amber-50 text-gray-600">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4">
+        <nav class="text-sm text-gray-500">
+            <a href="index.html" class="hover:underline">Головна</a> > <span class="text-gray-800">Галерея</span>
+        </nav>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold mb-12 text-center">Фотогалерея</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Кафе" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Піца" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=600&q=80" alt="Інтер'єр" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=600&q=80" alt="Страви" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=600&q=80" alt="Діти" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Затишок" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">the BEST KIDS</h3>
+                <p class="text-sm">Сімейне кафе та піцерія у Тернополі для найкращих моментів вашої родини.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">проспект Злуки, 5а, Тернопіль</p>
+                <p class="text-sm mb-2">+380687335541</p>
+                <p class="text-sm">thebestkids0@gmail.com</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Години роботи</h3>
+                <p class="text-sm">Пн-Нд: 10:00 - 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
